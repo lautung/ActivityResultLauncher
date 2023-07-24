@@ -13,7 +13,7 @@ import android.provider.MediaStore
 class DeleteUriLauncher {
 
 
-  inline fun Activity.delete(contentUri: Uri, id: Long = ContentUris.parseId(contentUri)) {
+  fun Activity.delete(contentUri: Uri, id: Long = ContentUris.parseId(contentUri)) {
     val requestCode = 100
     when {
       Build.VERSION.SDK_INT >= Build.VERSION_CODES.R -> {
